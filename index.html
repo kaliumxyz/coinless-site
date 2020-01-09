@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Document</title>
+        <script src="https://cdn.jsdelivr.net/npm/typeit@6/dist/typeit.min.js" >
+        </script>
+        <style>
+         html, body {
+             font-family: helvetica;
+             overflow: hidden;
+         }
+         .hero {
+             padding-top: 20%;
+             font-size: 3em;
+         }
+         footer {
+             position: absolute;
+             bottom: 0;
+             font-size: 3em;
+             width: 100%;
+         }
+         a {
+             text-decoration: none;
+         }
+        </style>
+    </head>
+    <body>
+        <center class="hero"><p>We are building</p><p id="hero"></p></center>
+        <footer><center>follow <a href="https://twitter.com/barducci">@barducci</a> for updates</center></footer>
+        <script>
+         new TypeIt('#hero', {
+             speed: 60,
+             startDelay: 900,
+             loop: true
+         }).type('...')
+           .pause(300)
+           .type(' a firewall for developers')
+           .pause(1500)
+           .delete(26)
+           .type(' a security solution for custodians')
+           .pause(1500)
+           .delete(35)
+           .type(' a business model for cryptoassets')
+           .pause(1500)
+           .delete(34)
+           .go();
+        </script>
+    </body>
+</html>
